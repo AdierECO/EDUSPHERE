@@ -1,0 +1,190 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #081C33;
+    /* Azul oscuro */
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Sombra sutil */
+}
+
+/* Logo */
+.logo {
+    width: 70px;
+    height: auto;
+}
+
+/* Barra de navegación */
+.nav-bar {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-bar a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav-bar a.active {
+    color: #FFC107;
+    /* Amarillo para el enlace activo */
+}
+
+.nav-bar a:hover {
+    color: #FFC107;
+    /* Amarillo al pasar el mouse */
+}
+
+/* Información del usuario */
+.user-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.profile-pic {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.user-info {
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.user-display {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.dropdown-arrow {
+    font-size: 12px;
+    transition: transform 0.3s ease;
+}
+
+.user-info:hover .dropdown-arrow {
+    transform: rotate(180deg);
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
+    min-width: 180px;
+    z-index: 1000;
+    display: none;
+    animation: fadeIn 0.3s ease;
+}
+
+.dropdown-menu.show {
+    display: block;
+}
+
+.dropdown-menu a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 20px;
+    color: #333;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.dropdown-menu a:hover {
+    background-color: #f5f5f5;
+    color: #4a6cf7;
+}
+
+.dropdown-menu i {
+    width: 20px;
+    text-align: center;
+}
+.dropdown-menu i {
+    width: 20px;
+    text-align: center;
+    margin-right: 10px;
+    color: #666;
+    transition: all 0.2s ease;
+}
+
+.dropdown-menu a:hover i {
+    color: #4a6cf7;
+    transform: scale(1.1);
+}
+
+/* Íconos específicos */
+.fa-user-circle {
+    font-size: 16px;
+}
+
+.fa-sign-out-alt {
+    font-size: 15px;
+}
+.user-display {
+    display: flex;
+    align-items: center;  /* Alinea verticalmente los elementos */
+    gap: 10px;           /* Espacio entre elementos */
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.user-display:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.profile-pic {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-left: 10px;
+}
+
+.dropdown-arrow {
+    font-size: 12px;
+    transition: transform 0.3s ease;
+    margin-left: 5px;
+}
+
+.user-info:hover .dropdown-arrow {
+    transform: rotate(180deg);
+}
+
+/* Asegurar que el texto no se desborde */
+.user-display span {
+    font-weight: 500;
+    color: #ffffff;
+    max-width: 150px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

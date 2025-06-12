@@ -1,0 +1,373 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F4F4F4;
+    color: #333;
+    min-height: 100vh;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    padding: 15px 20px;
+    background-color: #081C33;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo */
+.logo {
+    width: 60px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+/* Navigation and User Info Container */
+.header-content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+/* Barra de navegación */
+.nav-bar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 15px;
+    justify-content: center;
+}
+
+.nav-bar a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+    font-size: 14px;
+    padding: 5px 0;
+}
+
+.nav-bar a.active {
+    color: #FFC107;
+}
+
+.nav-bar a:hover {
+    color: #FFC107;
+}
+
+/* Información del usuario */
+.user-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.profile-pic {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+
+/* Main Content */
+.container {
+    padding: 15px;
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 15px;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+.card img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+}
+
+.card h2 {
+    font-size: 16px;
+    color: #081C33;
+    margin: 0;
+}
+
+/* Secciones de Detalles */
+section.card {
+    display: none;
+    margin-top: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+}
+
+.card-header {
+    background-color: #b8d9ff;
+    color: white;
+    padding: 12px;
+    border-radius: 8px 8px 0 0;
+    text-align: center;
+    margin: -15px -15px 15px -15px;
+}
+
+.card-body {
+    padding: 10px;
+}
+
+.card-body ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.card-body li {
+    margin-bottom: 8px;
+    font-size: 14px;
+    padding: 5px 0;
+}
+
+/* Calendar */
+.calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+}
+
+.calendar-header h3 {
+    margin: 5px 0;
+    width: 100%;
+    text-align: center;
+}
+
+.calendar-header button {
+    background-color: #FFC107;
+    border: none;
+    padding: 5px 10px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 4px;
+    color: #081C33;
+    transition: background-color 0.3s;
+    margin: 5px;
+}
+
+.calendar-header button:hover {
+    background-color: #e0a800;
+}
+
+.calendar {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 15px;
+    font-size: 12px;
+}
+
+.calendar th,
+.calendar td {
+    padding: 8px 5px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+.calendar th {
+    background-color: #081c33;
+    color: white;
+    font-weight: normal;
+}
+
+.calendar td {
+    background-color: white;
+}
+
+.calendar td.present {
+    background-color: #15c745;
+    color: white;
+}
+
+.calendar td.absent {
+    background-color: #ee2e20;
+    color: white;
+}
+
+/* Botón de regresar */
+.btn-regresar {
+    background-color: #FFC107;
+    border: none;
+    padding: 8px 15px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 4px;
+    color: #081C33;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.btn-regresar:hover {
+    background-color: #e0a800;
+}
+
+.card-header h2 {
+    color: #ffffff;
+    font-size: 18px;
+    margin: 0;
+}
+
+/* Media Queries para diferentes tamaños de pantalla */
+
+/* Tablet (ancho mínimo 600px) */
+@media (min-width: 600px) {
+    .header {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .header-content {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .logo {
+        margin-bottom: 0;
+        width: 65px;
+    }
+    
+    .nav-bar {
+        margin-bottom: 0;
+        justify-content: flex-start;
+    }
+    
+    .user-info {
+        margin-top: 0;
+        justify-content: flex-end;
+    }
+    
+    .card-grid {
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        gap: 20px;
+    }
+    
+    .card {
+        padding: 18px;
+    }
+    
+    .card img {
+        width: 70px;
+        height: 70px;
+    }
+    
+    .calendar {
+        font-size: 14px;
+    }
+    
+    .btn-regresar {
+        width: auto;
+        padding: 10px 20px;
+    }
+}
+
+/* Computadora (ancho mínimo 992px) */
+@media (min-width: 992px) {
+    .header {
+        padding: 15px 40px;
+    }
+    
+    .logo {
+        width: 70px;
+    }
+    
+    .nav-bar {
+        gap: 25px;
+    }
+    
+    .nav-bar a {
+        font-size: 16px;
+    }
+    
+    .profile-pic {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .container {
+        padding: 25px 40px;
+        max-width: 1400px;
+        margin: 0 auto;
+    }
+    
+    .card-grid {
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 25px;
+    }
+    
+    .card {
+        padding: 20px;
+        border-radius: 10px;
+    }
+    
+    .card img {
+        width: 80px;
+        height: 80px;
+    }
+    
+    .card h2 {
+        font-size: 18px;
+    }
+    
+    section.card {
+        padding: 20px;
+        border-radius: 10px;
+    }
+    
+    .card-header {
+        padding: 15px;
+        border-radius: 10px 10px 0 0;
+        margin: -20px -20px 20px -20px;
+    }
+    
+    .card-body li {
+        font-size: 16px;
+    }
+    
+    .calendar {
+        font-size: 16px;
+    }
+    
+    .calendar th,
+    .calendar td {
+        padding: 12px 8px;
+    }
+    
+    .calendar-header h3 {
+        width: auto;
+    }
+    
+    .calendar-header button {
+        font-size: 16px;
+        padding: 8px 15px;
+    }
+}

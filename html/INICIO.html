@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interfaz de Roles</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+  <header class="header">
+    <img src="../IMAGENES/logo.gif" alt="EDUSPHERE" class="logo">
+    <h2>EDUSPHERE</h2>
+    <button class="btn-regresar" id="btnRegresar">REGRESAR</button>
+
+    <script>
+        document.getElementById("btnRegresar").addEventListener("click", function() {
+            window.location.href = "http://www.google.com";
+        });
+    </script>
+      </header>
+  
+  <main class="container">
+    <div class="card">
+      <a href="loginPadres.html" class="circle">
+        <img src="../IMAGENES/Padres de familia.png" alt="Padres de Familia">
+      </a>
+      <div class="label">PADRES DE FAMILIA</div>
+    </div>
+    <div class="card">
+      <a href="loginEstudiante.html" class="circle">
+        <img src="../IMAGENES/Estudiante.png" alt="Estudiante">
+      </a>
+      <div class="label">ESTUDIANTE</div>
+    </div>
+    <div class="card">
+      <a href="loginDocentesAdmins.html" class="circle">
+        <img src="../IMAGENES/DOCENTE.png" alt="Docente">
+      </a>
+      <div class="label">DOCENTE</div>
+    </div>
+  </main>
+</body>
+</html>

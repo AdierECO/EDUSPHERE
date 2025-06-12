@@ -1,0 +1,151 @@
+/* Estilos para el contenedor de iconos */
+.header-icons {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Estilos para el icono de notificación */
+.notification-icon {
+    position: relative;
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: #333;
+    padding: 5px;
+}
+
+/* Badge de notificaciones no leídas */
+.notification-badge {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background-color: #ff4757;
+    color: white;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.7rem;
+    font-weight: bold;
+}
+
+/* Dropdown de notificaciones */
+.notification-dropdown {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 50px;
+    width: 350px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    z-index: 1000;
+}
+
+/* Encabezado del dropdown */
+.notification-header {
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.notification-header h3 {
+    margin: 0;
+    font-size: 1rem;
+    color: #333;
+}
+
+.mark-all-read {
+    color: #3498db;
+    cursor: pointer;
+    font-size: 0.8rem;
+}
+
+.mark-all-read:hover {
+    text-decoration: underline;
+}
+
+/* Lista de notificaciones */
+.notification-list {
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+/* Items de notificación */
+.notification-item {
+    padding: 12px 15px;
+    border-bottom: 1px solid #f1f1f1;
+    display: flex;
+    align-items: center;
+}
+
+.notification-item.no-leido {
+    background-color: #f8f9fa;
+}
+
+.notification-item:hover {
+    background-color: #f1f1f1;
+}
+
+.notification-item i {
+    margin-right: 10px;
+    font-size: 1.2rem;
+}
+
+.notification-content {
+    flex: 1;
+}
+
+.notification-message {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #333;
+}
+
+.notification-time {
+    font-size: 0.7rem;
+    color: #777;
+    margin-top: 3px;
+}
+
+/* Prioridades */
+.prioridad-alta {
+    color: #e74c3c;
+}
+
+.prioridad-media {
+    color: #f39c12;
+}
+
+.prioridad-baja {
+    color: #3498db;
+}
+
+/* Pie del dropdown */
+.notification-footer {
+    padding: 10px 15px;
+    text-align: center;
+    border-top: 1px solid #eee;
+}
+
+.notification-footer a {
+    color: #3498db;
+    text-decoration: none;
+    font-size: 0.8rem;
+}
+
+.notification-footer a:hover {
+    text-decoration: underline;
+}
+
+/* Mensaje de carga */
+.loading-notifications {
+    padding: 20px;
+    text-align: center;
+    color: #777;
+    font-size: 0.9rem;
+}

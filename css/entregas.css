@@ -1,0 +1,433 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('../IMAGENES/FONDO.png') no-repeat center center fixed;
+    background-size: cover;
+    color: #333;
+    min-height: 100vh;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #081C33;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    width: 70px;
+    height: auto;
+}
+
+.header-title {
+    margin: 0;
+    font-size: 1.5rem;
+    color: white;
+}
+
+.nav-bar {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-bar a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav-home {
+    color: #FFC107 !important;
+}
+
+.nav-bar a:hover {
+    color: #FFC107;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+}
+
+.user-dropdown {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.user-display {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.profile-pic-header {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: none;
+}
+
+.dropdown-icon {
+    font-size: 12px;
+    transition: transform 0.3s;
+}
+
+.user-display:hover .dropdown-icon {
+    transform: rotate(180deg);
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.dropdown-menu.show {
+    display: block;
+}
+
+.logout-btn {
+    width: 100%;
+    padding: 12px 16px;
+    text-align: left;
+    border: none;
+    background: none;
+    color: #333;
+    cursor: pointer;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logout-btn:hover {
+    background-color: #f1f1f1;
+    color: #081C33;
+}
+
+/* Contenedor principal */
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+}
+
+/* Estilos para las entregas */
+.entregas-container {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(244, 244, 244, 0.9);
+    border-radius: 10px;
+}
+
+.tarea-card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    border-top: 1px solid #eee;
+    transition: all 0.3s ease;
+}
+
+.tarea-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.tarea-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.tarea-title {
+    font-size: 1.4rem;
+    color: #081C33;
+    margin: 0;
+    font-weight: 600;
+}
+
+.tarea-meta {
+    color: #757575;
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+    display: flex;
+    gap: 15px;
+}
+
+.tarea-descripcion {
+    margin-bottom: 20px;
+    line-height: 1.6;
+    color: #555;
+    font-size: 15px;
+}
+
+.entrega-section {
+    margin-top: 25px;
+    padding-top: 15px;
+    border-top: 1px solid #e0e0e0;
+}
+
+/* Badges */
+.badge-entregado {
+    background-color: #4CAF50;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 12px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.badge-pendiente {
+    background-color: #FFA000;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 12px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+/* Vista previa */
+.preview-container {
+    margin-top: 15px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    border: 1px solid #e0e0e0;
+}
+
+.toggle-preview-btn {
+    margin-bottom: 10px;
+}
+
+/* Archivos entregados */
+.archivo-entregado {
+    display: flex;
+    align-items: center;
+    background-color: rgba(76, 175, 80, 0.1);
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin: 15px 0;
+    gap: 10px;
+}
+
+/* Previsualización de archivos */
+.pdf-preview {
+    width: 100%;
+    margin-top: 15px;
+}
+
+.docx-preview {
+    margin-top: 15px;
+}
+
+.docx-content {
+    background-color: white;
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.docx-text {
+    max-height: 300px;
+    overflow-y: auto;
+    white-space: pre-wrap;
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+}
+
+.docx-actions {
+    margin-top: 10px;
+}
+
+.no-preview {
+    color: #757575;
+    font-style: italic;
+    margin-top: 15px;
+}
+
+/* Formulario de entrega */
+.form-entrega {
+    margin-top: 20px;
+}
+
+.file-input-container {
+    margin-bottom: 15px;
+}
+
+.file-input-label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #081C33;
+}
+
+.file-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.btn-submit {
+    background-color: #FFC107;
+    color: #081C33;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.btn-submit:hover {
+    background-color: #FFD54F;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+/* Calificaciones */
+.calificacion-container {
+    margin-top: 15px;
+    padding: 15px;
+    background-color: rgba(255, 193, 7, 0.1);
+    border-radius: 5px;
+}
+
+.calificacion-titulo {
+    font-weight: bold;
+    color: #081C33;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.calificacion-valor {
+    font-size: 1.2rem;
+    color: #388E3C;
+    font-weight: bold;
+}
+
+/* Comentarios del profesor */
+.comentarios-profesor {
+    margin-top: 15px;
+    padding: 15px;
+    background-color: rgba(2, 136, 209, 0.1);
+    border-radius: 5px;
+}
+
+.comentarios-titulo {
+    font-weight: bold;
+    color: #081C33;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* Mensajes */
+.mensaje {
+    padding: 15px;
+    margin: 20px 0;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.mensaje.success {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.mensaje.error {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+/* No hay tareas */
+.no-tareas {
+    text-align: center;
+    padding: 30px;
+    color: #666;
+    font-size: 1.1rem;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .tarea-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .tarea-meta {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .entregas-container {
+        padding: 15px;
+    }
+
+    .container {
+        padding: 15px;
+    }
+
+    .archivo-entregado {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .header {
+        flex-direction: column;
+        gap: 10px;
+        padding: 15px;
+    }
+
+    .nav-bar {
+        flex-direction: column;
+        gap: 10px;
+    }
+}

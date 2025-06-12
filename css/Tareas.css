@@ -1,0 +1,175 @@
+/* Estilos personalizados para el formulario */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url('../IMAGENES/FONDO.png'); /* Ruta de la imagen de fondo */
+  background-size: cover; /* La imagen cubre toda la pantalla */
+  background-position: center; /* Centra la imagen */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  color: #333;
+  min-height: 100vh; /* Asegura que el body ocupe toda la altura de la pantalla */
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #081C33; /* Azul oscuro */
+  color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+.logo {
+  width: 70px;
+  height: auto;
+}
+
+.nav-bar {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-bar a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.nav-bar a.active {
+  color: #FFC107; /* Amarillo para el enlace activo */
+}
+
+.nav-bar a:hover {
+  color: #FFC107; /* Amarillo al pasar el mouse */
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.profile-pic {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+/* Main Content */
+.container {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #555;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+  width: 100%; /* Asegura que los campos ocupen todo el ancho disponible */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 150px;
+}
+
+.btn-submit {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  background-color: #081C33;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.btn-submit:hover {
+  background-color: #081C33;
+}
+
+.btn-regresar {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #6c757d;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.btn-regresar:hover {
+  background-color: #5a6268;
+}
+
+.tareas-lista {
+  margin-top: 40px;
+}
+
+.tarea-item {
+  background: #f9f9f9;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.tarea-item h3 {
+  margin: 0;
+  color: #333;
+}
+
+.tarea-item p {
+  margin: 10px 0;
+  color: #555;
+}
+
+.tarea-item small {
+  color: #888;
+}
+
+.acciones {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+.acciones a {
+  margin-left: 10px;
+  text-decoration: none;
+  color: #007bff;
+}
+
+.acciones a:hover {
+  text-decoration: underline;
+}

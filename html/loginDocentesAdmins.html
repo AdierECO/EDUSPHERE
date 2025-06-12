@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inicio de Sesión</title>
+  <link rel="stylesheet" href="../css/Login.css">
+  <!-- SweetAlert CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+</head>
+<body>
+  <div class="login-container">
+    <button class="btn-regresar" onclick="window.location.href='INICIO.html'">REGRESAR</button>
+    <div class="login-box">
+      <h1>Iniciar Sesión</h1>
+      <form action="../php/Verificar.php" method="post">
+        <div class="input-group">
+          <label for="username">Usuario</label>
+          <input type="text" id="username" name="username" placeholder="Ingresa tu usuario" required>
+        </div>
+        <div class="input-group">
+          <label for="password">Contraseña</label>
+          <input type="password" id="password" name="password" placeholder="Ingresa tu contraseña" required>
+        </div>
+        <button type="submit" class="btn-login">Entrar</button>
+        <p class="register-link"><a href="recuperearContraseña.php">¿Olvidaste tu contraseña?</a></p>
+      </form>
+    </div>
+  </div>
+
+  <!-- SweetAlert JS -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script>
+    // Mostrar alertas según parámetros de la URL
+    document.addEventListener('DOMContentLoaded', function() {
+      const urlParams = new URLSearchParams(window.location.search);
+      const error = urlParams.get('error');
+      const errorMessages = {
+        'invalid_credentials': 'Usuario o contraseña incorrectos',
+        'user_not_found': 'Usuario no encontrado',
+        'invalid_request': 'Método de solicitud no válido',
+        'invalid_role': 'Rol no reconocido'
+      };
+
+      if (error && errorMessages[error]) {
+        Swal.fire({
+          icon: 'error',
+          title: 'Error',
+          text: errorMessages[error],
+          confirmButtonText: 'Aceptar'
+        }).then(() => {
+          // Limpiar el parámetro de error de la URL
+          window.history.replaceState({}, document.title, window.location.pathname);
+        });
+      }
+    });
+  </script>
+</body>
+</html>

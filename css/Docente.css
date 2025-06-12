@@ -1,0 +1,189 @@
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url('../IMAGENES/FONDO.png'); /* Ruta de la imagen de fondo */
+  background-size: cover; /* La imagen cubre toda la pantalla */
+  background-position: center; /* Centra la imagen */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  background-attachment: fixed; /* Fija la imagen para que no se desplace con el scroll */
+  color: #333;
+  min-height: 100vh; /* Asegura que el body ocupe toda la altura de la pantalla */
+}
+
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #081C33; /* Azul oscuro */
+  color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+.logo {
+  width: 70px;
+  height: auto;
+}
+
+.nav-bar {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-bar a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.nav-bar a.active {
+  color: #FFC107; /* Amarillo para el enlace activo */
+}
+
+.nav-bar a:hover {
+  color: #FFC107; /* Amarillo al pasar el mouse */
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.profile-pic {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+/* Main Content */
+.container {
+  padding: 20px;
+  align-items: center;
+}
+
+/* Profile Section */
+.profile-section {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
+}
+
+.profile-card {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(68, 68, 68, 0.1);
+  padding: 20px;
+  max-width: 600px; /* Opcional: limita el ancho máximo */
+  width: 100%; /* Asegura que ocupe el ancho disponible */
+}
+
+.profile-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.profile-info h2 {
+  margin: 0;
+  font-size: 24px;
+  color: #081C33;
+  text-align: center; /* Centra el texto */
+}
+
+.profile-info p {
+  margin: 5px 0;
+  font-size: 16px;
+  text-align: center; /* Centra el texto */
+}
+
+/* Dashboard */
+.dashboard {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.dashboard-item {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.dashboard-item:hover {
+  transform: translateY(-5px); /* Efecto de elevación */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.dashboard-item img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 10px;
+}
+
+.dashboard-item a {
+  color: #FFC107; /* Amarillo */
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.dashboard-item p {
+  color: #081C33; /* Amarillo */
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.dashboard-item a:hover {
+  color: #e0a800; /* Amarillo más oscuro */
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .header {
+      flex-direction: column;
+      text-align: center;
+      padding: 10px;
+  }
+
+  .nav-bar {
+      flex-direction: column;
+      gap: 10px;
+  }
+
+  .profile-card {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .profile-image {
+      margin-right: 0;
+      margin-bottom: 15px;
+  }
+
+  .dashboard {
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+
+  .dashboard-item img {
+      width: 50px;
+      height: 50px;
+  }
+
+  .dashboard-item p {
+      font-size: 16px;
+  }
+}

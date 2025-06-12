@@ -1,0 +1,279 @@
+:root {
+    --primary: #4361ee;
+    --secondary: #3f37c9;
+    --accent: #4895ef;
+    --light: #f8f9fa;
+    --dark: #212529;
+    --success: #4cc9f0;
+    --warning: #f8961e;
+    --danger: #f94144;
+    --gray: #6c757d;
+    --priority-high: #F44336;
+    --priority-medium: #FF9800;
+    --priority-low: #4CAF50;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f5f7fa;
+    color: var(--dark);
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #081C33;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    width: 70px;
+    height: auto;
+}
+
+.nav-bar {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-bar a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav-bar a.active {
+    color: #FFC107;
+}
+
+.nav-bar a:hover {
+    color: #FFC107;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.profile-pic {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+h1 {
+    color: var(--dark);
+    margin-bottom: 25px;
+    font-size: 28px;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+h1::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60px;
+    height: 4px;
+    background-color: var(--accent);
+    border-radius: 2px;
+}
+
+.avisos-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.aviso-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    padding: 25px;
+    position: relative;
+    border-left: 5px solid;
+    transition: transform 0.3s;
+}
+
+.aviso-card:hover {
+    transform: translateY(-5px);
+}
+
+.priority-high {
+    border-left-color: var(--priority-high);
+}
+
+.priority-medium {
+    border-left-color: var(--priority-medium);
+}
+
+.priority-low {
+    border-left-color: var(--priority-low);
+}
+
+.aviso-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.aviso-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.aviso-priority {
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.priority-high-bg {
+    background-color: rgba(244, 67, 54, 0.1);
+    color: var(--priority-high);
+}
+
+.priority-medium-bg {
+    background-color: rgba(255, 152, 0, 0.1);
+    color: var(--priority-medium);
+}
+
+.priority-low-bg {
+    background-color: rgba(76, 175, 80, 0.1);
+    color: var(--priority-low);
+}
+
+.aviso-meta {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+    color: var(--gray);
+}
+
+.aviso-meta-item {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.aviso-content {
+    margin-top: 15px;
+    line-height: 1.7;
+}
+
+.no-avisos {
+    text-align: center;
+    padding: 40px;
+    color: var(--gray);
+}
+
+.no-avisos i {
+    font-size: 50px;
+    margin-bottom: 15px;
+    color: #ddd;
+}
+
+.no-avisos p {
+    font-size: 18px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    color: var(--gray);
+    font-size: 14px;
+    margin-top: 50px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav-bar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .user-info {
+        margin-top: 10px;
+    }
+
+    .aviso-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .aviso-meta {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .aviso-card {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        padding: 10px;
+    }
+
+    .logo {
+        width: 50px;
+    }
+
+    .nav-bar a {
+        font-size: 0.9rem;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    .aviso-card {
+        padding: 15px;
+    }
+
+    .aviso-title {
+        font-size: 1.1rem;
+    }
+
+    .aviso-priority {
+        font-size: 0.7rem;
+    }
+
+    .aviso-meta {
+        font-size: 0.8rem;
+    }
+
+    .aviso-content {
+        font-size: 0.9rem;
+    }
+}

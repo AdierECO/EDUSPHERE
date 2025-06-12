@@ -1,0 +1,586 @@
+/* Estilos generales mejorados */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f9fa;
+  background-image: url('../IMAGENES/FONDO.png');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  line-height: 1.6;
+}
+
+/* Header mejorado */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 25px;
+  background-color: #0A2A4D;
+  color: white;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  height: 45px;
+  width: auto;
+}
+
+.nav-bar {
+  display: flex;
+  gap: 25px;
+}
+
+.nav-bar a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 15px;
+  padding: 8px 0;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.nav-bar a.active {
+  color: #FFC107;
+}
+
+.nav-bar a:hover {
+  color: #FFC107;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  position: relative;
+}
+
+.user-display {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 20px;
+  transition: background-color 0.3s;
+}
+
+.user-display:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.profile-pic {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.dropdown-menu {
+  position: absolute;
+  right: 0;
+  top: 100%;
+  background-color: white;
+  min-width: 180px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  display: none;
+  z-index: 1000;
+}
+
+.dropdown-menu.show {
+  display: block;
+  animation: fadeIn 0.3s ease-out;
+}
+
+.logout-btn {
+  width: 100%;
+  padding: 12px 20px;
+  text-align: left;
+  border: none;
+  background: none;
+  color: #333;
+  cursor: pointer;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: all 0.2s;
+}
+
+.logout-btn:hover {
+  background-color: #f5f5f5;
+  color: #0A2A4D;
+}
+
+/* Contenido principal mejorado */
+.container {
+  padding: 30px;
+  max-width: 900px;
+  margin: 20px auto;
+  width: 100%;
+  flex: 1;
+}
+
+h1 {
+  color: #FFC107;
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 28px;
+  font-weight: 700;
+  text-shadow:
+    1px 1px 3px rgba(0, 0, 0, 0.3),
+    -1px -1px 0 #0A2A4D,
+    1px -1px 0 #0A2A4D,
+    -1px 1px 0 #0A2A4D,
+    1px 1px 0 #0A2A4D;
+}
+
+/* Lista de notificaciones mejorada */
+.notification-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.notification-item {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+  display: flex;
+  overflow: hidden;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  border-left: 4px solid;
+  position: relative;
+}
+
+.notification-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.12);
+}
+
+.notification-content {
+  flex: 1;
+  padding: 20px;
+}
+
+.notification-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.notification-header h3 {
+  margin: 0;
+  font-size: 18px;
+  color: #2c3e50;
+  font-weight: 600;
+  flex: 1;
+  min-width: 200px;
+}
+
+.notification-body {
+  margin-bottom: 15px;
+}
+
+.notification-body p {
+  margin: 0 0 12px 0;
+  color: #555;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+/* Información de tarea mejorada */
+.tarea-info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 15px;
+  font-size: 14px;
+  color: #555;
+}
+
+.tarea-info span {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background-color: #f5f7fa;
+  padding: 6px 12px;
+  border-radius: 20px;
+}
+
+.tarea-info i {
+  color: #3498db;
+  font-size: 14px;
+}
+
+.notification-footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+  font-size: 13px;
+  color: #666;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.notification-footer span {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.notification-date {
+  font-weight: 600;
+}
+
+.notification-author {
+  font-style: normal;
+  font-weight: 500;
+}
+
+.notification-type {
+  background-color: #3498db;
+  color: white;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Botones de acción */
+.btn-entregar {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  background-color: #28a745;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.2s;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-entregar:hover {
+  background-color: #218838;
+  transform: translateY(-2px);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+.btn-entregar i {
+  font-size: 14px;
+}
+
+.btn-ver {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  background-color: #17a2b8;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.2s;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-ver:hover {
+  background-color: #138496;
+  transform: translateY(-2px);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+.btn-ver i {
+  font-size: 14px;
+}
+
+/* Badge de calificación mejorado */
+.calificacion-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  font-weight: 700;
+  font-size: 14px;
+  margin-left: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.calificacion-badge.baja {
+  background-color: #ffebee;
+  color: #f44336;
+  border: 2px solid #f44336;
+  animation: pulse 1.5s infinite;
+}
+
+.calificacion-badge.media {
+  background-color: #fff3e0;
+  color: #ff9800;
+  border: 2px solid #ff9800;
+}
+
+.calificacion-badge.alta {
+  background-color: #e8f5e9;
+  color: #4caf50;
+  border: 2px solid #4caf50;
+}
+
+/* Badge de tarea pendiente */
+.pendiente-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px 10px;
+  border-radius: 20px;
+  background-color: #dc3545;
+  color: white;
+  font-weight: 700;
+  font-size: 12px;
+  margin-left: 10px;
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+/* Sin notificaciones */
+.no-notifications {
+  text-align: center;
+  padding: 50px;
+  color: #666;
+  font-size: 16px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+}
+
+.no-notifications i {
+  font-size: 40px;
+  color: #0A2A4D;
+  opacity: 0.5;
+  margin-bottom: 15px;
+  display: block;
+}
+
+/* Tipos de notificación */
+.notification-aviso {
+  border-left-color: #3498db;
+}
+
+.notification-aviso .notification-type {
+  background-color: #3498db;
+}
+
+.notification-tarea {
+  border-left-color: #9b59b6;
+}
+
+.notification-tarea .notification-type {
+  background-color: #9b59b6;
+}
+
+.notification-calificacion {
+  border-left-color: #f39c12;
+}
+
+.notification-calificacion .notification-type {
+  background-color: #f39c12;
+}
+
+.notification-pendiente {
+  animation: highlight 1s ease;
+  border-left-color: #dc3545;
+}
+
+@keyframes highlight {
+  0% { box-shadow: 0 0 0 0 rgba(220, 53, 69, 0.4); }
+  70% { box-shadow: 0 0 0 10px rgba(220, 53, 69, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(220, 53, 69, 0); }
+}
+
+/* Prioridades */
+.priority-label {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 0.5px;
+}
+
+.priority-baja {
+  background-color: #4CAF50;
+}
+
+.priority-media {
+  background-color: #FF9800;
+}
+
+.priority-alta {
+  background-color: #F44336;
+}
+
+/* Animaciones mejoradas */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.notification-item {
+  animation: fadeIn 0.4s ease-out forwards;
+}
+
+/* Responsive Design mejorado */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    padding: 15px;
+    gap: 15px;
+  }
+
+  .nav-bar {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .container {
+    padding: 20px;
+  }
+
+  .notification-content {
+    padding: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .notification-footer {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .tarea-info {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .no-notifications {
+    padding: 30px 20px;
+  }
+
+  .btn-entregar,
+  .btn-ver {
+    width: 100%;
+    justify-content: center;
+    padding: 10px;
+  }
+}
+
+/* ESTILOS NUEVOS PARA NOTIFICACIONES NO LEÍDAS */
+
+/* Badge de notificaciones no leídas */
+.notification-badge {
+    background-color: #dc3545;
+    color: white;
+    border-radius: 50%;
+    padding: 3px 8px;
+    font-size: 12px;
+    font-weight: bold;
+    margin-left: 5px;
+    animation: pulse 1.5s infinite;
+}
+
+/* Botón para marcar como leídas */
+.mark-read-form {
+    margin-left: auto;
+}
+
+.btn-mark-read {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background-color: #0A2A4D;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.2s;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-mark-read:hover {
+    background-color: #1a3a6d;
+    transform: translateY(-2px);
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+.btn-mark-read i {
+    font-size: 16px;
+}
+
+/* Encabezado de notificaciones */
+.notification-header-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+/* Notificaciones no leídaas */
+.notification-unread {
+    border-left-width: 6px;
+    background-color: #f8f9ff;
+}
+
+.unread-indicator {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 8px;
+    height: 8px;
+    background-color: #dc3545;
+    border-radius: 50%;
+}

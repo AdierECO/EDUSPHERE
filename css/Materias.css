@@ -1,0 +1,116 @@
+/* Estilos personalizados */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('../IMAGENES/FONDO.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #333;
+    min-height: 100vh;
+}
+.container {
+    max-width: 1100px;
+    margin: 50px auto;
+    padding: 30px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+h1 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 35px;
+    font-size: 28px;
+    font-weight: 600;
+}
+.table-container {
+    margin-top: 25px;
+    overflow-x: auto;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    overflow: hidden;
+}
+th, td {
+    padding: 14px 16px;
+    text-align: left;
+    border-right: 1px solid #e0e0e0;
+    border-bottom: 1px solid #e0e0e0;
+}
+th {
+    background-color: #2c3e50;
+    color: #fff;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+tr:hover {
+    background-color: #f1f5f9;
+}
+td {
+    vertical-align: top;
+}
+.estudiantes-table {
+    width: 100%;
+    margin: 0;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    overflow: hidden;
+}
+.estudiantes-table th {
+    background-color: #34495e;
+    font-size: 13px;
+    padding: 8px 12px;
+}
+.estudiantes-table td {
+    padding: 8px 12px;
+    font-size: 14px;
+    border-right: 1px solid #e0e0e0;
+    border-bottom: 1px solid #e0e0e0;
+}
+.estudiantes-table tr:last-child td {
+    border-bottom: none;
+}
+.estudiantes-table tr td:last-child {
+    border-right: none;
+}
+.no-data {
+    text-align: center;
+    padding: 25px;
+    color: #7f8c8d;
+    font-style: italic;
+}
+.btn-regresar {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 10px 25px;
+    background-color: #2c3e50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 15px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+.btn-regresar:hover {
+    background-color: #1a252f;
+}
+.table-caption {
+    font-size: 15px;
+    color: #7f8c8d;
+    margin-bottom: 15px;
+    text-align: right;
+    font-style: italic;
+}

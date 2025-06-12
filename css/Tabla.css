@@ -1,0 +1,129 @@
+/* CREADOR: Erick Adier Ortiz Cabrera. Grupo: 4AVPRO. */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(IMAGENES/Fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
+
+table {
+    margin: 20px auto;
+    width: 90%;
+    max-width: 1320px;
+    border-collapse: collapse;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: center;
+}
+
+th {
+    background-color: #2c3e50;
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+td {
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+    color: #333;
+    font-size: 0.95rem;
+}
+
+td a {
+    display: inline-block;
+    margin: 0 2px;
+}
+
+td button {
+    margin: 0;
+    min-width: 50px; 
+}
+
+.btn-update i, 
+.btn-remove i {
+    pointer-events: none; 
+}
+
+td {
+    white-space: nowrap;
+}
+
+tr:hover td {
+    background-color: #f1f1f1;
+}
+
+.btn-update, .btn-remove {
+    border: none;
+    border-radius: 5px;
+    padding: 8px 12px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin: 0 5px;
+}
+
+.btn-update {
+    background-color: #28a745; /* Verde */
+    color: white;
+}
+.btn-remove {
+    background-color: #a73728;
+    color: white;
+}
+
+.btn-update:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+}
+.btn-remove:hover {
+    background-color: #882121;
+    transform: scale(1.05);
+}
+
+.btn-form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.btn-nuevo {
+    background-color: #641E16;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-nuevo:hover {
+    background-color: #1A5276;
+}
+
+/* Estilos para el contenedor principal */
+.container {
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 1400px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
