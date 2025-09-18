@@ -1,94 +1,91 @@
-Perfecto 🚀 Te preparo un **README.md** bien estructurado para tu repositorio de **EduSphere** en GitHub.
-
-Aquí lo tienes listo para copiar y pegar:
-
 ````markdown
-# 📚 EduSphere - Plataforma Educativa Integral  
+# 📚 EduSphere – Plataforma Educativa Integral  
 
-EduSphere es una **aplicación web** diseñada para instituciones educativas de nivel básico, con el objetivo de **digitalizar procesos escolares y administrativos**.  
-La plataforma permite gestionar **asistencia, calificaciones, tareas, comunicación con padres y reportes académicos**, todo desde un solo lugar.  
+EduSphere es una **aplicación web** para instituciones educativas de nivel básico que busca **digitalizar procesos escolares y administrativos**.  
+La plataforma facilita la **gestión académica, comunicación con padres de familia y administración escolar**, todo en un solo lugar.  
 
 ---
 
 ## ✨ Características principales  
 - 👨‍🏫 **Gestión académica**: control de asistencia, calificaciones y tareas.  
-- 📢 **Comunicación institucional**: avisos, notificaciones y chat con padres de familia.  
-- 📊 **Reportes automáticos**: visualización integral del desempeño académico.  
+- 📢 **Comunicación institucional**: avisos, notificaciones y chat con padres.  
+- 📊 **Reportes automáticos**: desempeño académico en tiempo real.  
 - 🔐 **Gestión de usuarios**: accesos personalizados para estudiantes, docentes, padres y administradores.  
 - ☁️ **Seguridad y accesibilidad**: aplicación web responsiva con soporte en la nube.  
 
 ---
 
 ## 🛠️ Tecnologías utilizadas  
-- **Frontend**:  
-  - HTML5, CSS3, JavaScript  
-  - Framework: (Ej. React, Angular o Vue – ajusta según lo que uses)  
-  - Bootstrap / TailwindCSS (para estilos responsivos)  
 
-- **Backend**:  
-  - PHP 8 (con soporte a sesiones y seguridad)  
-  - Node.js (opcional, si piensas integrarlo en módulos de tiempo real)  
+### 🔹 Frontend  
+- HTML5, CSS3, JavaScript  
+- Framework: *(React, Angular o Vue – según implementación)*  
+- Bootstrap / TailwindCSS  
 
-- **Base de datos**:  
-  - MySQL / MariaDB  
+### 🔹 Backend  
+- PHP 8 *(con sesiones y seguridad)*  
+- Node.js *(opcional, para módulos en tiempo real)*  
 
-- **Servidor y despliegue**:  
-  - Apache / Nginx  
-  - Hosting en la nube (Ej. AWS, Azure, u otro)  
+### 🔹 Base de datos  
+- MySQL / MariaDB  
+
+### 🔹 Servidor y despliegue  
+- Apache / Nginx  
+- Hosting en la nube *(AWS, Azure u otro)*  
 
 ---
 
 ## ⚙️ Instalación y configuración  
 
-### 1. Clonar el repositorio  
+### 1️⃣ Clonar el repositorio  
 ```bash
 git clone https://github.com/TU-USUARIO/edusphere.git
 cd edusphere
 ````
 
-### 2. Configurar el backend
+### 2️⃣ Configurar el backend
 
-1. Instala un servidor local (XAMPP, Laragon o WAMP).
-2. Copia los archivos del proyecto en la carpeta `htdocs` (si usas XAMPP).
-3. Crea una base de datos en MySQL llamada `edusphere_db`.
-4. Importa el archivo `database/edusphere.sql` incluido en el proyecto.
-5. Configura la conexión en `php/Conexion.php`:
+1. Instalar servidor local (XAMPP, Laragon o WAMP).
+2. Copiar archivos del proyecto en la carpeta `htdocs` (XAMPP).
+3. Crear base de datos `edusphere_db` en MySQL.
+4. Importar `database/edusphere.sql`.
+5. Configurar conexión en `php/Conexion.php`:
 
-   ```php
-   $host = "localhost";
-   $usuario = "root";
-   $password = "";
-   $base_datos = "edusphere_db";
-   ```
+```php
+$host = "localhost";
+$usuario = "root";
+$password = "";
+$base_datos = "edusphere_db";
+```
 
-### 3. Configurar el frontend
+### 3️⃣ Configurar el frontend
 
-Si usas un framework (React/Vue/Angular):
+Si usas framework (React/Vue/Angular):
 
 ```bash
 npm install
 npm run dev
 ```
 
-Si es HTML/CSS/JS plano, abre el archivo `index.html` en el navegador.
+Si es HTML/CSS/JS plano: abre `index.html` en tu navegador.
 
-### 4. Levantar el servidor
+### 4️⃣ Levantar el servidor
 
-* Si usas XAMPP: inicia **Apache** y **MySQL**.
-* Accede a:
+* Con XAMPP: iniciar **Apache** y **MySQL**.
+* Acceder a:
 
-  ```
-  http://localhost/edusphere
-  ```
+```
+http://localhost/edusphere
+```
 
 ---
 
 ## 👥 Roles de usuario
 
-* **Administrador**: gestiona usuarios, módulos y reportes.
-* **Docente**: registra asistencia, tareas y calificaciones.
-* **Estudiante**: consulta calificaciones, tareas y avisos.
-* **Padre de familia**: recibe notificaciones y consulta desempeño académico.
+* **Administrador** → gestiona usuarios, módulos y reportes.
+* **Docente** → registra asistencia, tareas y calificaciones.
+* **Estudiante** → consulta calificaciones, tareas y avisos.
+* **Padre de familia** → recibe notificaciones y consulta desempeño académico.
 
 ---
 
@@ -112,37 +109,9 @@ edusphere/
 
 ## 🚀 Futuras mejoras
 
-* ✅ Implementación de notificaciones en tiempo real.
-* ✅ App móvil (Android/iOS).
+* ✅ Notificaciones en tiempo real.
+* ✅ Aplicación móvil (Android/iOS).
 * ✅ Integración con Google Classroom y Microsoft Teams.
-
----
-
-## 🤝 Contribución
-
-1. Haz un **fork** del repositorio.
-2. Crea una rama con tu función:
-
-   ```bash
-   git checkout -b feature/nueva-funcion
-   ```
-3. Haz un commit de tus cambios:
-
-   ```bash
-   git commit -m "Agregada nueva función"
-   ```
-4. Haz un push a la rama:
-
-   ```bash
-   git push origin feature/nueva-funcion
-   ```
-5. Abre un **Pull Request**.
-
----
-
-## 📄 Licencia
-
-Este proyecto está bajo la licencia **MIT** – puedes usarlo, modificarlo y distribuirlo libremente.
 
 ---
 
@@ -150,10 +119,8 @@ Este proyecto está bajo la licencia **MIT** – puedes usarlo, modificarlo y di
 
 * **Erick Adier Ortiz Cabrera** – Director General & Backend Developer
 * **Christopher Osiel Nava Cruz** – Frontend Developer
-
-```
+* **Jesús Gregorio Castelán Lira** – Backend Developer
+* **José Luis Curiel López** – Backend Developer
 
 ---
 
-👉 ¿Quieres que además te haga un **`edusphere.sql` de ejemplo** con tablas básicas (usuarios, asistencias, tareas, calificaciones, roles) para que ya lo agregues directo a tu repo?
-```
