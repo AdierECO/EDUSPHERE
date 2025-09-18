@@ -59,14 +59,7 @@ $base_datos = "edusphere_db";
 
 ### 3️⃣ Configurar el frontend
 
-Si usas framework (React/Vue/Angular):
-
-```bash
-npm install
-npm run dev
-```
-
-Si es HTML/CSS/JS plano: abre `index.html`.
+ abre `index.html`.
 
 ### 4️⃣ Levantar el servidor
 
