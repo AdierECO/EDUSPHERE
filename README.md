@@ -38,7 +38,7 @@
 
 ### 1️⃣ Clonar el repositorio  
 ```bash
-git clone https://github.com/TU-USUARIO/edusphere.git
+git clone https://github.com/AdierECO/edusphere.git
 cd edusphere
 ````
 
@@ -122,8 +122,3 @@ edusphere/
 * **José Luis Curiel López** – Backend Developer
 
 ---
-
-```
-
-👉 ¿Quieres que en la parte de **Autores** también te agregue íconos de **GitHub/LinkedIn** con enlaces a sus perfiles para que quede más pro?
-```
