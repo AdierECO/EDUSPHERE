@@ -59,7 +59,7 @@ $base_datos = "edusphere_db";
 
 ### 3️⃣ Configurar el frontend
 
- abre `index.html`.
+Abre `index.html`.
 
 ### 4️⃣ Levantar el servidor
 
