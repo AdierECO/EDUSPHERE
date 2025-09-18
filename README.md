@@ -1,4 +1,10 @@
+Perfecto 🚀 Te dejo un **README.md** mejor diseñado con un inicio más atractivo, títulos en **negro/neutro** (sin azul por defecto en GitHub), y las **tecnologías representadas con íconos** usando [shields.io](https://shields.io/) y logotipos oficiales.
+
+Aquí va la nueva versión:
+
 ````markdown
+<div align="center">
+
 # 📚 EduSphere  
 ### Plataforma Educativa Integral  
 
@@ -47,7 +53,6 @@
 ---
 
 ## ⚙️ Instalación y configuración  
-````
 
 ### 1️⃣ Clonar el repositorio  
 ```bash
