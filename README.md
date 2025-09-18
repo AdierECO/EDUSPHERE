@@ -38,7 +38,7 @@
 
 ### 1️⃣ Clonar el repositorio  
 ```bash
-git clone https://github.com/AdierECO/edusphere.git
+git clone https://github.com/AdierECO/EDUSPHERE.git
 cd edusphere
 ````
 
