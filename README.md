@@ -1,8 +1,14 @@
 ````markdown
-# 📚 EduSphere – Plataforma Educativa Integral  
+<div align="center">
 
-EduSphere es una **aplicación web** para instituciones educativas de nivel básico que busca **digitalizar procesos escolares y administrativos**.  
-La plataforma facilita la **gestión académica, comunicación con padres de familia y administración escolar**, todo en un solo lugar.  
+# 📚 EduSphere  
+### Plataforma Educativa Integral  
+
+✨ Una aplicación web que digitaliza procesos escolares y administrativos en instituciones de nivel básico.  
+
+📌 Gestión académica | Comunicación | Reportes | Seguridad  
+
+</div>  
 
 ---
 
@@ -17,25 +23,33 @@ La plataforma facilita la **gestión académica, comunicación con padres de fam
 
 ## 🛠️ Tecnologías utilizadas  
 
+<div align="center">
+
 ### 🔹 Frontend  
-- HTML5, CSS3, JavaScript  
-- Framework: *(React, Angular o Vue – según implementación)*  
-- Bootstrap / TailwindCSS  
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)  
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)  
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)  
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)  
+![TailwindCSS](https://img.shields.io/badge/TailwindCSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)  
 
 ### 🔹 Backend  
-- PHP 8 *(con sesiones y seguridad)*  
-- Node.js *(opcional, para módulos en tiempo real)*  
+![PHP](https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white)  
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white)  
 
 ### 🔹 Base de datos  
-- MySQL / MariaDB  
+![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)  
 
 ### 🔹 Servidor y despliegue  
-- Apache / Nginx  
-- Hosting en la nube *(AWS, Azure u otro)*  
+![Apache](https://img.shields.io/badge/Apache-D22128?style=for-the-badge&logo=apache&logoColor=white)  
+![Nginx](https://img.shields.io/badge/Nginx-009639?style=for-the-badge&logo=nginx&logoColor=white)  
+![AWS](https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazon-aws&logoColor=white)  
+
+</div>  
 
 ---
 
 ## ⚙️ Instalación y configuración  
+````
 
 ### 1️⃣ Clonar el repositorio  
 ```bash
@@ -46,7 +60,7 @@ cd edusphere
 ### 2️⃣ Configurar el backend
 
 1. Instalar servidor local (XAMPP, Laragon o WAMP).
-2. Copiar archivos del proyecto en la carpeta `htdocs` (XAMPP).
+2. Copiar archivos del proyecto en la carpeta `htdocs`.
 3. Crear base de datos `edusphere_db` en MySQL.
 4. Importar `database/edusphere.sql`.
 5. Configurar conexión en `php/Conexion.php`:
@@ -67,7 +81,7 @@ npm install
 npm run dev
 ```
 
-Si es HTML/CSS/JS plano: abre `index.html` en tu navegador.
+Si es HTML/CSS/JS plano: abre `index.html`.
 
 ### 4️⃣ Levantar el servidor
 
@@ -124,3 +138,7 @@ edusphere/
 
 ---
 
+```
+
+👉 ¿Quieres que en la parte de **Autores** también te agregue íconos de **GitHub/LinkedIn** con enlaces a sus perfiles para que quede más pro?
+```
