@@ -1,6 +1,4 @@
 ````markdown
-<div align="center">
-
 # 📚 EduSphere  
 ### Plataforma Educativa Integral  
 
