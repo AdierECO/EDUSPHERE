@@ -114,8 +114,7 @@ edusphere/
 ## 👨‍💻 Autores
 
 * **Erick Adier Ortiz Cabrera** – Director General & Backend Developer
-* **Christopher Osiel Nava Cruz** – Frontend Developer
 * **Jesús Gregorio Castelán Lira** – Backend Developer
 * **José Luis Curiel López** – Backend Developer
-
+* **Christopher Osiel Nava Cruz** – Frontend Developer
 ---
