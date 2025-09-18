@@ -1,4 +1,3 @@
-
 # 📚 EduSphere  
 ### Plataforma Educativa Integral  
 
