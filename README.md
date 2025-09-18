@@ -107,10 +107,7 @@ edusphere/
 ---
 
 ## 🚀 Futuras mejoras
-
-* ✅ Notificaciones en tiempo real.
 * ✅ Aplicación móvil (Android/iOS).
-* ✅ Integración con Google Classroom y Microsoft Teams.
 
 ---
 
