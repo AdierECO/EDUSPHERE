@@ -1,4 +1,3 @@
-````markdown
 
 # 📚 EduSphere  
 ### Plataforma Educativa Integral  
