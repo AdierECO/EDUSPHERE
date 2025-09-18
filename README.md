@@ -1,9 +1,4 @@
-Perfecto 🚀 Te dejo un **README.md** mejor diseñado con un inicio más atractivo, títulos en **negro/neutro** (sin azul por defecto en GitHub), y las **tecnologías representadas con íconos** usando [shields.io](https://shields.io/) y logotipos oficiales.
-
-Aquí va la nueva versión:
-
 ````markdown
-<div align="center">
 
 # 📚 EduSphere  
 ### Plataforma Educativa Integral  
@@ -11,8 +6,6 @@ Aquí va la nueva versión:
 ✨ Una aplicación web que digitaliza procesos escolares y administrativos en instituciones de nivel básico.  
 
 📌 Gestión académica | Comunicación | Reportes | Seguridad  
-
-</div>  
 
 ---
 
@@ -26,8 +19,6 @@ Aquí va la nueva versión:
 ---
 
 ## 🛠️ Tecnologías utilizadas  
-
-<div align="center">
 
 ### 🔹 Frontend  
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)  
@@ -47,8 +38,6 @@ Aquí va la nueva versión:
 ![Apache](https://img.shields.io/badge/Apache-D22128?style=for-the-badge&logo=apache&logoColor=white)  
 ![Nginx](https://img.shields.io/badge/Nginx-009639?style=for-the-badge&logo=nginx&logoColor=white)  
 ![AWS](https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazon-aws&logoColor=white)  
-
-</div>  
 
 ---
 
